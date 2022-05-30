@@ -70,19 +70,20 @@ nav ul li a {
 
 #demo .col {
   min-height: 350px;
-  min-width: 30%;
-  margin: 30px 0;
+  min-width: 33%;
+  padding: 10px ;
 }
 
 #demo .col-large {
-  min-width: 65%;
+  min-width: 66.6%;
+  /* flex: 2; */
 }
 
 #demo .card {
   background-color: #b5ddff;
   width: 100%;
   height: 100%;
-  border-radius: 30px;
+  border-radius: 20px;
 }
 
 /* Planning section */
@@ -197,7 +198,7 @@ footer {
 
 @media screen and (max-width: 768px) {
   .container {
-    max-width: 90%;
+    max-width: 95%;
   }
 
   /* Navbar */
@@ -248,7 +249,7 @@ footer {
 
 @media screen and (max-width: 480px) {
   .container {
-    max-width: 83%;
+    max-width: 90%;
   }
 
   /* Navbar */
