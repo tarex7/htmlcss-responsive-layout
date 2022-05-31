@@ -52,7 +52,7 @@ a {
 }
 
 .w-50 {
-  min-width: 50px;
+  min-width: 50%;
 }
 
 .w-70 {
@@ -79,6 +79,11 @@ a {
 
 .txt-secondary {
   color: #9792e4;
+}
+
+.big-text {
+  font-size: 6rem;
+  color:#fdc15f ;
 }
 
 /* Margin */
@@ -197,6 +202,13 @@ a {
 .btn-light {
   background-color: #fff;
   color: #000;
+}
+
+.btn-xl {
+  background-color: #fff;
+  color: #9792e4;
+  padding: 30px 80px;
+  border-radius: 50px;
 }
 
 /* Backgrounds */
@@ -451,18 +463,7 @@ h2 {
   font-size: 4rem;
 }
 
-/* #about-us img {
-  width: 150%;
-  position: relative;
-  right: 23%;
-}
 
-#about-us .img {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  overflow: hidden;
-} */
 
 #about-us img {
   width: 100%;
@@ -493,6 +494,10 @@ h2 {
   right: 35%;
 }
 
+.fa-circle {
+  font-size: 0.4rem;
+}
+
 /* Get-started */
 
 #get-started {
@@ -506,6 +511,17 @@ h2 {
 #get-started .col-large {
   width: 100%;
   height: 100%;
+}
+
+#get-started h4 {
+  text-transform: uppercase;
+}
+
+#get-started h2 {
+  color:#fff;
+  font-size: 3rem;
+  
+
 }
 
 /* Footer */
@@ -656,6 +672,10 @@ footer {
   #demo .card-text {
     width: 70%;
     margin: 0 auto;
+  }
+
+  #demo img {
+    width: 100%;
   }
 
   /* Planning section */
