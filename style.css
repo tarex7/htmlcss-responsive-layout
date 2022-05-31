@@ -11,8 +11,6 @@ body {
   padding-top: 50px;
 }
 
-
-
 a {
   text-decoration: none;
 }
@@ -101,6 +99,10 @@ a {
   margin-left: 10px;
 }
 
+.ml-100 {
+  margin-left: 50px;
+}
+
 .mx-50 {
   margin: 0 50px;
 }
@@ -121,6 +123,10 @@ a {
   margin: 60px 0;
 }
 
+.my-100 {
+  margin: 100px 0;
+}
+
 .mt-40 {
   margin-top: 30px;
 }
@@ -131,6 +137,10 @@ a {
 
 .mb-30 {
   margin-bottom: 30px;
+}
+
+.mb-60 {
+  margin-bottom: 60px;
 }
 
 .mb-100 {
@@ -181,7 +191,7 @@ a {
 .btn-secondary {
   background-color: #9792e4;
   color: #fff;
-  padding: 12px 60px;
+  padding: 12px 20px;
 }
 
 .btn-light {
@@ -206,6 +216,10 @@ a {
   color: #000;
 }
 
+.text-secondary {
+  color: #9792e4;
+}
+
 .text-center {
   text-align: center;
 }
@@ -228,7 +242,7 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 1;
+  z-index: 2;
 }
 
 p {
@@ -421,13 +435,62 @@ h2 {
 
 /* About us */
 
+#about-us .card-image {
+  position: relative;
+}
+
 #about-us .col-large {
   width: 70%;
-  min-height: 800px;
 }
 
 #about-us .col-small {
   width: 30%;
+}
+
+#about-us h1 {
+  font-size: 4rem;
+}
+
+/* #about-us img {
+  width: 150%;
+  position: relative;
+  right: 23%;
+}
+
+#about-us .img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+} */
+
+#about-us img {
+  width: 100%;
+  position: relative;
+  right: 0%;
+}
+
+#about-us .img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+#about-us p {
+  line-height: 40px;
+}
+
+#about-us .col-small p {
+  font-size: 2rem;
+}
+
+#about-us .fa-quote-left {
+  font-size: 5rem;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 35%;
 }
 
 /* Get-started */
@@ -548,11 +611,15 @@ footer {
 
   #about-us .col-large {
     width: 60%;
-    min-height: 800px;
+    padding: 20px;
   }
 
   #about-us .col-small {
     width: 40%;
+  }
+
+  #about-us .fa-quote-left {
+    right: 15%;
   }
 }
 
@@ -631,15 +698,39 @@ footer {
 
   /* About us section*/
 
+  #about-us .row {
+    flex-direction: column;
+  }
+
   #about-us .col-large {
-    display: none;
     width: 100%;
-    min-height: 1000px;
-    background-color: #9792e4;
+    margin-bottom: 0;
+  }
+
+  #about-us img {
+    width: 100%;
+    position: relative;
+    right: 0%;
+  }
+  
+  #about-us .img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    overflow: hidden;
   }
 
   #about-us .col-small {
     width: 100%;
     min-height: 500px;
+  }
+
+  #about-us .col-small {
+    margin: 0;
+  }
+
+  #about-us .fa-quote-left {
+    right: 27%;
+    font-size: 6rem;
   }
 }
