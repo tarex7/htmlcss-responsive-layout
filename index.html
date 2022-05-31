@@ -17,22 +17,28 @@
     />
 
     <!-- Font awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <!-- Header -->
     <header>
       <div class="container">
         <!-- Navbar -->
-        <nav class="debug">
-          <div id="logo" class="debug">LOGO</div>
-          <div class="menu debug">
+        <nav>
+          <div id="logo" class=""><img src="./img/logo.png" alt="logo" /></div>
+          <div class="menu">
             <ul>
-              <li><a href="">test</a></li>
-              <li><a href="">test</a></li>
-              <li><a href="">test</a></li>
-              <li><a href="">test</a></li>
-              <li><a href="">test</a></li>
+              <li><a href="">Planning</a></li>
+              <li><a href="">Testimonials</a></li>
+              <li><a href="">Features</a></li>
+              <li><a href="">About Us</a></li>
+              <li><a class="btn btn-light" href="">Get Started</a></li>
             </ul>
             <i id="hamburger" class="fa-solid fa-bars"></i>
           </div>
@@ -45,21 +51,136 @@
     <main>
       <!-- Demo section -->
       <section id="demo">
-        <div class="row container ">
-          <div class="col col-large "><div class="card"></div></div>
-          <div class="col "><div class="card"></div></div>
-          <div class="col "><div class="card"></div></div>
-          <div class="col "><div class="card"></div></div>
-          <div class="col "><div class="card"></div></div>
+        <div class="row wrap container">
+          <div class="col col-large">
+            <!-- Big card -->
+            <div class="card d-flex mobile-flex-col">
+              <!-- Card text -->
+              <div class="card-text">
+                <!-- Card title -->
+                <h2>Get a demo application</h2>
+                <p class="my-30">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Voluptates molestias quos modi vitae! Fuga non quidem magnam
+                  totam, placeat minima!
+                </p>
+
+                <!-- Button -->
+                <a href="#" class="btn btn-primary"
+                  ><i class="fa-brands fa-apple mr-10"></i>App Store</a
+                >
+              </div>
+              <div class="card-image w-50">
+                <img src="./img/phone.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <!-- Card -->
+            <div class="card txt-center">
+              <!-- Card icon -->
+              <i class="fa-solid fa-file-code"></i>
+              <!-- Card text -->
+              <div class="card-text">
+                <h2 class="my-30">Clean Code</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Id
+                  vitae laborum nesciunt dolorum odio cumque dolores, esse animi
+                  distinctio non?
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <!-- Card -->
+            <div class="card txt-center">
+              <!-- Card icon -->
+              <i class="fa-solid fa-compass-drafting"></i>
+              <!-- Card title -->
+              <h2 class="my-30">Web Design</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Id
+                vitae laborum nesciunt dolorum odio cumque dolores, esse animi
+                distinctio non?
+              </p>
+            </div>
+          </div>
+
+          <div class="col">
+            <!-- Card -->
+            <div class="card txt-center">
+              <!-- Card icon -->
+              <i class="fa-solid fa-laptop-code"></i>
+              <!-- Card title -->
+              <h2 class="my-30">Developement</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Id
+                vitae laborum nesciunt dolorum odio cumque dolores, esse animi
+                distinctio non?
+              </p>
+            </div>
+          </div>
+
+          <div class="col">
+            <!-- Card -->
+            <div class="card txt-center">
+              <!-- Card icon -->
+              <i class="fa-solid fa-bullhorn"></i>
+              <!-- Card title -->
+              <h2 class="my-30">Branding</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Id
+                vitae laborum nesciunt dolorum odio cumque dolores, esse animi
+                distinctio non?
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
       <!-- Planning section-->
       <section id="planning">
         <div class="container">
-          <div class="row">
-            <div class="col debug"></div>
-            <div class="col debug"></div>
+          <div class="row d-flex">
+            <div class="col p-50 debug">
+              <!-- Card -->
+              <div class="card m-30 pl-100 debug">
+                <!-- Card image -->
+                <img class="mb-100" src="./img/planning1.png" alt="" />
+                <!-- Card text -->
+                <div class="card-text">
+                  <h2 class="my-60">Strategic Planning</h2>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Accusamus odio fugit excepturi ratione incidunt consectetur
+                    earum mollitia, dicta dolor necessitatibus laborum tempore
+                    commodi beatae dolore, quam unde ducimus animi? Magnam?
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col d-flex flex-end debug">
+              <!-- Card -->
+              <div class="card m-30 mr-100 bg-white p-40">
+                <!-- Card image -->
+                <img src="./img/planning2.png" alt="" />
+                <!-- Card text -->
+                <div class="card-text text-dark text-center">
+                  <h3 class="my-20">App Developement</h3>
+                  <p>
+                    <em>
+                      Develop an on-demand app for your delivery business to
+                      reach your targeted customers without any
+                      interruption.</em
+                    >
+                  </p>
+                  <a href="#">
+                    <i class="fa-solid fa-arrow-down circle mt-40"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -68,42 +189,90 @@
 
       <section id="testimonials">
         <div class="container">
-          <div class="test-header debug"></div>
+          <div class="test-header ">
+            <h4 class="my-40">Testimonials</h4>
+            <h1 class="txt-secondary">We are committed expert partners</h1>
+            <p class="my-60">
+              We place huge value on strong relationships and have seen the
+              benefit they bring to our business. Customer feedback is vital in
+              helping us to get it right.
+            </p>
+          </div>
+
           <!-- Card -->
           <div class="card">
             <!-- Card image -->
-            <div class="col col-small debug">
-              <div class="img debug"></div>
+            <div class="col col-small py-30">
+              <div class="img ">
+                <img src="./img/testimonial1.jpg" alt="" />
+              </div>
             </div>
             <!-- Card text -->
-            <div class="col  col-large debug">
-              <div class="text"></div>
+            <div class="col col-large ">
+              <div class="text">
+                
+                <p class="l-height-40"><i class="fa-solid fa-quote-left"></i>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
+                  vel quaerat eligendi blanditiis? Cumque sed temporibus sint
+                  voluptate pariatur accusantium quidem .
+                  <i class="fa-solid fa-quote-right"></i>
+                </p>
+
+                <h3 class="uppercase pl-10 my-20">Nat Reynolds</h1>
+              </div>
             </div>
           </div>
 
           <!-- Card -->
           <div class="card">
             <!-- Card image -->
-            <div class="col  col-small debug">
-              <div class="img debug"></div>
+            <div class="col col-small py-30">
+              <div class="img ">
+                <img src="./img/testimonial2.jpg" alt="" />
+              </div>
             </div>
             <!-- Card text -->
-            <div class="col  col-large debug">
-              <div class="text"></div>
+            <div class="col col-large ">
+              <div class="text">
+                
+                <p class="l-height-40"><i class="fa-solid fa-quote-left"></i>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
+                  vel quaerat eligendi blanditiis? Cumque sed temporibus sint
+                  voluptate pariatur accusantium quidem .
+                  <i class="fa-solid fa-quote-right"></i>
+                </p>
+
+                <h3 class="uppercase pl-10 my-20">Celia Almeda</h1>
+              </div>
             </div>
           </div>
 
           <!-- Card -->
           <div class="card">
             <!-- Card image -->
-            <div class="col col-small debug">
-              <div class="img debug"></div>
+            <div class="col col-small py-30">
+              <div class="img ">
+                <img src="./img/testimonial3.jpg" alt="" />
+              </div>
             </div>
             <!-- Card text -->
-            <div class="col col-large debug">
-              <div class="text"></div>
+            <div class="col col-large ">
+              <div class="text">
+                
+                <p class="l-height-40"><i class="fa-solid fa-quote-left"></i>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
+                  vel quaerat eligendi blanditiis? Cumque sed temporibus sint
+                  voluptate pariatur accusantium quidem .
+                  <i class="fa-solid fa-quote-right"></i>
+                </p>
+
+                <h3 class="uppercase pl-10 my-20">Bob Roberts</h1>
+              </div>
             </div>
           </div>
+
+          
+
         </div>
       </section>
 
@@ -112,15 +281,100 @@
       <section id="benefits">
         <div class="container">
           <!-- Section title -->
-          <div class="section-title debug"></div>
+          <div class="section-title d-flex justify-center align-y">
+            <h1 class="text-center">Benefits of working with us</h1>
+          </div>
           <!-- Cards -->
-          <div class="row debug">
-            <div class="col debug"><div class="card"></div></div>
-            <div class="col debug"><div class="card"></div></div>
-            <div class="col debug"><div class="card"></div></div>
-            <div class="col debug"><div class="card"></div></div>
-            <div class="col debug"><div class="card"></div></div>
-            <div class="col debug"><div class="card"></div></div>
+          <div class="row wrap ">
+            <!-- Column -->
+            <div class="col ">
+              <!-- Card -->
+              <div class="card">
+                <h1 class="text-large">01</h1>
+                <h2 class="my-30">High Quality</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Quibusdam voluptates, quam aut architecto veniam nemo porro!
+                  Recusandae amet illum harum?
+                </p>
+                <a href="" class="btn btn-secondary my-30">more</a>
+              </div>
+            </div>
+
+            <!-- Column -->
+            <div class="col ">
+              <!-- Card -->
+              <div class="card">
+                <h1 class="text-large">02</h1>
+                <h2 class="my-30">Creative Team</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Quibusdam voluptates, quam aut architecto veniam nemo porro!
+                  Recusandae amet illum harum?
+                </p>
+                <a href="" class="btn btn-secondary my-30">more</a>
+              </div>
+            </div>
+
+            <!-- Column -->
+            <div class="col ">
+              <!-- Card -->
+              <div class="card">
+                <h1 class="text-large">03</h1>
+                <h2 class="my-30">Amazing Result</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Quibusdam voluptates, quam aut architecto veniam nemo porro!
+                  Recusandae amet illum harum?
+                </p>
+                <a href="" class="btn btn-secondary my-30">more</a>
+              </div>
+            </div>
+
+            <!-- Column -->
+            <div class="col ">
+              <!-- Card -->
+              <div class="card">
+                <h1 class="text-large">04</h1>
+                <h2 class="my-30">Best Pricing</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Quibusdam voluptates, quam aut architecto veniam nemo porro!
+                  Recusandae amet illum harum?
+                </p>
+                <a href="" class="btn btn-secondary my-30">more</a>
+              </div>
+            </div>
+
+            <!-- Column -->
+            <div class="col ">
+              <!-- Card -->
+              <div class="card">
+                <h1 class="text-large">05</h1>
+                <h2 class="my-30">Innovations</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Quibusdam voluptates, quam aut architecto veniam nemo porro!
+                  Recusandae amet illum harum?
+                </p>
+                <a href="" class="btn btn-secondary my-30">more</a>
+              </div>
+            </div>
+
+            <!-- Column -->
+            <div class="col ">
+              <!-- Card -->
+              <div class="card">
+                <h1 class="text-large">06</h1>
+                <h2 class="my-30">24/7 Support</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Quibusdam voluptates, quam aut architecto veniam nemo porro!
+                  Recusandae amet illum harum?
+                </p>
+                <a href="" class="btn btn-secondary my-30">more</a>
+              </div>
+            </div>
           </div>
         </div>
       </section>

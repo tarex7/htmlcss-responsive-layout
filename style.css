@@ -11,6 +11,12 @@ body {
   padding-top: 50px;
 }
 
+
+
+a {
+  text-decoration: none;
+}
+
 /* Utilities */
 
 .debug {
@@ -22,25 +28,224 @@ body {
   margin: 0 auto;
 }
 
+.d-flex {
+  display: flex;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.align-y {
+  align-items: center;
+}
+
+.flex-end {
+  align-items: flex-end;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
 .row {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
 }
+
+.w-50 {
+  min-width: 50px;
+}
+
+.w-70 {
+  width: 80%;
+}
+
+.l-height-40 {
+  line-height: 40px;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.txt-center {
+  text-align: center;
+}
+
+/* Text colors */
+
+.txt-primary {
+  color: #0084fd;
+}
+
+.txt-secondary {
+  color: #9792e4;
+}
+
+/* Margin */
+
+.m-30 {
+  margin: 30px;
+}
+
+.mr-10 {
+  margin-right: 10px;
+}
+
+.mr-100 {
+  margin-right: 100px;
+}
+
+.ml-10 {
+  margin-left: 10px;
+}
+
+.mx-50 {
+  margin: 0 50px;
+}
+
+.my-20 {
+  margin: 20px 0;
+}
+
+.my-30 {
+  margin: 30px 0;
+}
+
+.my-40 {
+  margin: 40px 0;
+}
+
+.my-60 {
+  margin: 60px 0;
+}
+
+.mt-40 {
+  margin-top: 30px;
+}
+
+.mt-100 {
+  margin-top: 100px;
+}
+
+.mb-30 {
+  margin-bottom: 30px;
+}
+
+.mb-100 {
+  margin-bottom: 100px;
+}
+
+/* Padding */
+
+.p-20 {
+  padding: 20px;
+}
+
+.p-40 {
+  padding: 40px;
+}
+
+.p-50 {
+  padding: 50px;
+}
+
+.pl-10 {
+  padding-left: 10px;
+}
+
+.pl-100 {
+  padding-left: 100px;
+}
+
+.py-30 {
+  padding: 30px 0;
+}
+
+/* Buttons */
+
+.btn {
+  padding: 8px 10px;
+  border-radius: 30px;
+  display: inline-block;
+  font-size: 1.2rem;
+}
+
+.btn-primary {
+  background-color: #0084fd;
+  color: #fff;
+  padding: 12px 60px;
+}
+
+.btn-secondary {
+  background-color: #9792e4;
+  color: #fff;
+  padding: 12px 60px;
+}
+
+.btn-light {
+  background-color: #fff;
+  color: #000;
+}
+
+/* Backgrounds */
+
+.bg-white {
+  background-color: #fff;
+  border-radius: 50px;
+}
+
+/* Text */
+
+.text-large {
+  font-size: 5rem;
+}
+
+.text-dark {
+  color: #000;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.circle {
+  background-color: #9792e4;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  padding: 20px;
+  color: #000;
+}
+
+/* Generics */
 
 header {
   background-color: #0084fd;
   height: 80px;
   position: fixed;
   top: 0;
+  left: 0;
   width: 100%;
+  z-index: 1;
+}
+
+p {
+  line-height: 30px;
+  font-size: 1.1rem;
 }
 
 section {
   margin-top: 70px;
 }
 
+img {
+  width: 100%;
+}
+
 /* Navbar */
+
 nav {
   height: 80px;
   display: flex;
@@ -50,6 +255,8 @@ nav {
 
 nav ul {
   display: flex;
+  height: 100%;
+  align-items: center;
 }
 
 nav ul li {
@@ -57,26 +264,32 @@ nav ul li {
 }
 
 nav ul li a {
-  text-decoration: none;
   margin: 0 20px;
   color: #fff;
 }
 
 .fa-solid.fa-bars {
   display: none;
+  color: #fff;
 }
 
 /* Demo section */
 
+#demo h2 {
+  color: #0084fd;
+}
+
+#demo a {
+  display: inline-block;
+}
+
 #demo .col {
-  min-height: 350px;
-  min-width: 33%;
-  padding: 10px ;
+  max-width: calc(100% / 3);
+  padding: 10px;
 }
 
 #demo .col-large {
-  min-width: 66.6%;
-  /* flex: 2; */
+  max-width: calc(100% / 3 * 2);
 }
 
 #demo .card {
@@ -84,12 +297,30 @@ nav ul li a {
   width: 100%;
   height: 100%;
   border-radius: 20px;
+  color: #5a6e7f;
+  padding: 30px;
+  overflow: hidden;
+}
+
+#demo img {
+  position: relative;
+  top: 70px;
+}
+
+#demo .fa-solid {
+  font-size: 5rem;
+  color: #0084fd;
 }
 
 /* Planning section */
 
-section#planning {
+#planning {
   background-color: #9792e4;
+  color: #fff;
+}
+
+#planning h2 {
+  color: #fff;
 }
 
 #planning .col {
@@ -101,22 +332,34 @@ section#planning {
 /* Testimonials */
 
 .test-header {
-  min-height: 300px;
   text-align: center;
 }
 
+#testimonials h1 {
+  font-size: 3rem;
+}
+
+#testimonials h4 {
+  text-transform: uppercase;
+}
+
+#testimonials p {
+  font-size: 1.3rem;
+  padding: 0 15px;
+}
+
 #testimonials .card {
-  min-height: 280px;
   margin: 30px 0;
   padding: 20px;
   display: flex;
   background-color: #9792e4;
   align-items: center;
   border-radius: 30px;
+  color: #fff;
 }
 
 #testimonials .col-small {
-  width: 20%;
+  max-width: 20%;
 }
 
 #testimonials .col-large {
@@ -126,11 +369,19 @@ section#planning {
 #testimonials .img {
   width: 200px;
   height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+#testimonials img {
+  width: 150%;
+  position: relative;
+  right: 23%;
 }
 
 #testimonials .text {
   min-width: 50%;
-  min-height: 200px;
+  height: 100%;
   margin: 0 40px;
 }
 
@@ -138,12 +389,14 @@ section#planning {
 
 #benefits {
   background-color: #9792e4;
+  color: #5a6e7f;
 }
 
 #benefits .card {
   height: 100%;
   background-color: #fff;
   border-radius: 20px;
+  padding: 30px;
 }
 
 #benefits .section-title {
@@ -154,6 +407,16 @@ section#planning {
   width: calc(100% / 3 - 30px);
   min-height: 420px;
   margin-bottom: 50px;
+}
+
+#benefits h1,
+h2 {
+  color: #9792e4;
+}
+
+#benefits .section-title h1 {
+  font-size: 4rem;
+  color: #fff;
 }
 
 /* About us */
@@ -198,7 +461,13 @@ footer {
 
 @media screen and (max-width: 768px) {
   .container {
-    max-width: 95%;
+    max-width: 90%;
+  }
+
+  /* Utilities */
+
+  #demo .mobile-flex-col {
+    flex-direction: column;
   }
 
   /* Navbar */
@@ -206,14 +475,43 @@ footer {
     display: none;
   }
 
+  /* Navbar */
+  nav {
+    align-items: center;
+  }
+
   .fa-solid.fa-bars {
     display: block;
+    font-size: 2rem;
+  }
+
+  /* Demo section */
+
+  #demo img {
+    width: 60%;
   }
 
   /* Planning section */
 
+  #planning .row {
+    flex-direction: column;
+  }
+
   #planning .col {
     width: 100%;
+  }
+
+  #planning h2 {
+    font-size: 4rem;
+  }
+
+  #planning img {
+    padding: 0;
+  }
+
+  #planning .card {
+    padding: 0;
+    margin: 0;
   }
 
   /* Testimonial section */
@@ -226,11 +524,24 @@ footer {
     width: 70%;
   }
 
+  #testimonials .card {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #testimonials .text {
+    margin: 0 0 0 20px;
+  }
+
   /* Benefits */
   #benefits .col {
     width: calc(100% / 2 - 30px);
     min-height: 420px;
     margin-bottom: 50px;
+  }
+
+  #benefits .section-title h1 {
+    font-size: 3rem;
   }
 
   /* About us */
@@ -249,8 +560,10 @@ footer {
 
 @media screen and (max-width: 480px) {
   .container {
-    max-width: 90%;
+    max-width: 85%;
   }
+
+  /* Utilities */
 
   /* Navbar */
   nav ul {
@@ -264,14 +577,31 @@ footer {
   /* Demo section */
 
   #demo .col {
-    width: 100%;
-    margin: 25px 0;
+    min-width: 100%;
+    min-height: 350px;
+    margin: 10px 0;
+  }
+
+  #demo .card {
+    padding: 50px 30px;
+  }
+
+  #demo .card-text {
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  /* Planning section */
+
+  #planning h2 {
+    font-size: 3rem;
   }
 
   /* Testimonials section */
   #testimonials .card {
     display: flex;
     flex-direction: column;
+    text-align: center;
   }
 
   #testimonials .img {
@@ -281,7 +611,7 @@ footer {
   }
 
   #testimonials .col-small {
-    width: 100%;
+    min-width: 100%;
   }
 
   #testimonials .col-large {
@@ -293,6 +623,10 @@ footer {
     width: 100%;
     min-height: 420px;
     margin-bottom: 50px;
+  }
+
+  #benefits .section-title h1 {
+    font-size: 3rem;
   }
 
   /* About us section*/
